@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>GifTastic!</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="container">
+   
+    <h1>How are you feeling today?</h1>
+
+    <form id="gif-form">
+      <label for="gif-input">I'm feeling </label>
+      <input type="text" id="gif-input">
+      <br>
+
+      <!-- Button triggers new gif to be added -->
+      <input id="add-gif" type="submit" value="Add Current Mood">
+    </form>
+
+      <!-- Rendered Buttons will get Dumped Here  -->
+      <div id="buttons-view"></div>
+
+      <hr>
+
+      <!-- Gif will Get Dumped Here -->
+      <div id="gif-view"></div>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </div>
+  <script src="assets/javascript/GifTastic.js" aync defer></script>
+</body>
+
+</html>

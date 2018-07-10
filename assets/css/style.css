@@ -1,0 +1,28 @@
+body {
+    background-color: bisque;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+#add-gif {
+    margin: 10px;
+}
+
+button{
+    background-color:lightseagreen;
+    padding: 10px 24px;
+    border-radius: 5px;
+    margin-left: 5px;
+    margin-right:5px;
+    font-size: 16px;
+
+}
+div,
+
+#
+form,
+input {
+  margin: 20px;
+}
