@@ -27,7 +27,7 @@ function displayGifInfo() {
   // Creating an AJAX call for the specific movie button being clicked
   $.ajax({
     url: queryURL,
-    method: "GET",
+    method: "GET", 
     datatype: 'json'
   }).then(function(response) {
     console.log(response);
@@ -62,10 +62,18 @@ function displayGifInfo() {
       });
 
     // Appending the image
-    // gifDiv.append(image);
     gifDiv.prepend(image);
     }
   });
+
+  // $(
+  //   `
+  //   <div style="float:left;">
+  //   ${image}
+  //   ${pOne}
+  //   </div>
+  //   `
+  // )
 
 }
 
@@ -96,7 +104,7 @@ function renderButtons() {
 }
 
 // This function handles events where a gif button is clicked
-$("#add gif").on("click", function(event) {
+$("#add-gif").on("click", function(event) {
   event.preventDefault();
   // This line grabs the input from the textbox
   var gif = $("#gif-input").val().trim();
