@@ -38,6 +38,7 @@ function displayGifInfo() {
     $('#gif-view').empty().append(gifDiv);
 
     for (var i = 0; i < 10; i++) {
+    var imageContainer = $("<div class='image'>");
   // -------------------------------------------------------
     // Storing the rating data
     var rating = results[i].rating;
@@ -46,7 +47,7 @@ function displayGifInfo() {
     var pOne = $("<p>").text("Rating: " + rating);
     
     // Displaying the rating
-    gifDiv.prepend(pOne);
+    imageContainer.prepend(pOne);
   // ---------------------------------------------------------
     // Retrieving the URL for the image
     var animateImageURL = results[i].images.original.url;
@@ -62,7 +63,8 @@ function displayGifInfo() {
       });
 
     // Appending the image
-    gifDiv.prepend(image);
+    imageContainer.prepend(image);
+    gifDiv.append(imageContainer);
     }
   });
 
