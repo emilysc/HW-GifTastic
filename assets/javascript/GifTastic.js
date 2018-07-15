@@ -68,15 +68,6 @@ function displayGifInfo() {
     }
   });
 
-  // $(
-  //   `
-  //   <div style="float:left;">
-  //   ${image}
-  //   ${pOne}
-  //   </div>
-  //   `
-  // )
-
 }
 
 // Function for displaying gif data
